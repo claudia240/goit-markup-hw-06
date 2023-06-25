@@ -390,10 +390,51 @@
 						</li>
 					</ul>
 				</div>
+				<form name="newsletter" class="newsletter">
+					<label>
+						<p>ZAPISZ SIĘ DO NEWSLETTERA</p>
+						<input type="email" name="newsletter" placeholder="E-mail" />
+					</label>
+					<button type="submit">
+						Zapisz się
+						<svg width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use></svg>
+					</button>
+				</form>
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal scale">
+				<form name="form" class="modalform">
+					<h4>Zostaw swoje dane w formularzu poniżej</h4>
+					<label class="icon">
+						Imię
+						<svg width="12px" height="12px"><use href="./images/icons.svg#icon-person"></use></svg>
+						<input class="border" type="text" name="username" />
+					</label>
+					<label class="icon">
+						Telefon
+						<svg width="13px" height="13px"><use href="./images/icons.svg#icon-phone"></use></svg>
+						<input class="border" type="tel" name="phone" />
+					</label>
+					<label class="icon">
+						E-mail
+						<svg width="15px" height="12px"><use href="./images/icons.svg#icon-email"></use></svg>
+						<input class="border" type="email" name="email" />
+					</label>
+					<label>
+						Komentarz
+						<textarea class="border" name="coment" placeholder="Wprowadź tekst"></textarea>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox" checked="checked" />
+						<span class="checkmark"></span>
+						Oświadczam że akceptuję
+						<a href="./regulamin.html">Regulamin</a>
+						i
+						<a href="./polityka-prywatnosci.html">Politykę Prywatności.</a>
+					</label>
+					<button type="submit">Wyślij</button>
+				</form>
 				<button class="btn" type="button" data-modal-close><b>✕</b></button>
 			</div>
 		</div>
