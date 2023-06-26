@@ -397,7 +397,7 @@
 					</label>
 					<button type="submit">
 						Zapisz się
-						<svg width="24px" height="24px"><use href="./images/icons.svg#icon-send"></use></svg>
+						<svg width="24px" height="24px"><use href="./images/icons2.svg#icon-send"></use></svg>
 					</button>
 				</form>
 			</div>
@@ -405,37 +405,44 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal scale">
 				<form name="form" class="modalform">
-					<h4>Zostaw swoje dane w formularzu poniżej</h4>
-					<label class="icon">
+					<p>Zostaw swoje dane w formularzu poniżej</p>
+					<label class="icon label-style">
 						Imię
-						<svg width="12px" height="12px"><use href="./images/icons.svg#icon-person"></use></svg>
+						<svg width="12px" height="12px"><use href="./images/icons2.svg#icon-person"></use></svg>
 						<input class="border" type="text" name="username" />
 					</label>
-					<label class="icon">
+
+					<label class="icon label-style">
 						Telefon
-						<svg width="13px" height="13px"><use href="./images/icons.svg#icon-phone"></use></svg>
+						<svg width="13px" height="13px"><use href="./images/icons2.svg#icon-phone"></use></svg>
 						<input class="border" type="tel" name="phone" />
 					</label>
-					<label class="icon">
+
+					<label class="icon label-style">
 						E-mail
-						<svg width="15px" height="12px"><use href="./images/icons.svg#icon-email"></use></svg>
+						<svg width="15px" height="12px"><use href="./images/icons2.svg#icon-email"></use></svg>
 						<input class="border" type="email" name="email" />
 					</label>
-					<label>
+
+					<label class="textarea-margin">
 						Komentarz
 						<textarea class="border" name="coment" placeholder="Wprowadź tekst"></textarea>
 					</label>
+
 					<label class="checkbox">
 						<input type="checkbox" checked="checked" />
+
 						<span class="checkmark"></span>
 						Oświadczam że akceptuję
 						<a href="./regulamin.html">Regulamin</a>
 						i
 						<a href="./polityka-prywatnosci.html">Politykę Prywatności.</a>
 					</label>
-					<button type="submit">Wyślij</button>
+					<button class="send-btn" type="submit">Wyślij</button>
 				</form>
-				<button class="btn" type="button" data-modal-close><b>✕</b></button>
+				<button class="btn" type="button" data-modal-close>
+					<svg width="24px" height="24px"><use href="./images/close-icon.svg#icon-close"></use></svg>
+				</button>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>

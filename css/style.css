@@ -611,10 +611,11 @@ footer .icon {
 	background-color: var(--main-background-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
+	padding: 40px;
 }
 .btn {
-	position: relative;
-	right: -93%;
+	position: absolute;
+	right: 8px;
 	top: 6px;
 	width: 30px;
 	height: 30px;
@@ -739,18 +740,17 @@ footer .icon {
 	flex-direction: column;
 	width: 448px;
 }
-.modalform h4 {
+.modalform p {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 23px;
 	color: var(--main-text-color);
-	margin-top: 40px;
+	margin-bottom: 12px;
 }
 
 .modalform input {
 	width: 448px;
 	height: 40px;
-	margin-bottom: 10px;
 	padding-left: 30px;
 }
 .modalform textarea {
@@ -766,6 +766,7 @@ footer .icon {
 	cursor: pointer;
 	height: 0;
 	width: 0;
+	margin-bottom: 11px;
 }
 .checkmark {
 	position: absolute;
@@ -831,4 +832,25 @@ footer .icon {
 .border:hover {
 	border: 1px solid var(--brand-color);
 	border-radius: 4px;
+}
+
+.label-style {
+	margin-bottom: 10px;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+	text-align: left;
+}
+.textarea-margin {
+	margin-bottom: 20px;
+}
+.send-btn {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: 0.06em;
+	text-align: center;
 }
