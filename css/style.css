@@ -616,10 +616,13 @@ footer .icon {
 .btn {
 	position: absolute;
 	right: 8px;
-	top: 6px;
+	top: 8px;
 	width: 30px;
 	height: 30px;
 	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .is-hidden {
 	opacity: 0;
@@ -751,13 +754,15 @@ footer .icon {
 .modalform input {
 	width: 448px;
 	height: 40px;
-	padding-left: 30px;
+	padding-left: 38px;
+	border: 1px solid var(--light-grey);
+	border-radius: 4px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modalform textarea {
 	width: 448px;
 	height: 120px;
 	resize: none;
-	margin-bottom: 20px;
 	padding: 12px 16px 12px 16px;
 }
 .checkbox input {
@@ -770,8 +775,8 @@ footer .icon {
 }
 .checkmark {
 	position: absolute;
-	top: 77%;
-	left: 10%;
+	top: 75%;
+	left: 9%;
 	height: 16px;
 	width: 16px;
 	background-color: var(--main-background-color);
@@ -821,8 +826,10 @@ footer .icon {
 }
 .modalform svg {
 	position: absolute;
-	left: 50px;
-	margin-top: 30px;
+	left: 19px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: fill 250ms;
 }
 .modalform .icon:focus,
 .modalform .icon:hover {
@@ -842,6 +849,7 @@ footer .icon {
 	line-height: 14px;
 	letter-spacing: 0.01em;
 	text-align: left;
+	color: var(--text-color2);
 }
 .textarea-margin {
 	margin-bottom: 20px;
@@ -853,4 +861,9 @@ footer .icon {
 	line-height: 30px;
 	letter-spacing: 0.06em;
 	text-align: center;
+}
+
+.label-icons {
+	position: relative;
+	margin-top: 4px;
 }
